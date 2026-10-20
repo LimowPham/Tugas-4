@@ -1,0 +1,144 @@
+/* === WARNA === */
+:root {
+  --warna-utama: #C5A46D;   /* biru tua */
+  --warna-aksen: #651E24;   /* oranye */
+  --warna-latar: #141211;   /* abu terang */
+  --warna-teks: #1f2937;    /* abu gelap */
+}
+
+/* === RESET & BODY (selector elemen) === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--warna-latar);
+  color: var(--warna-teks);
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+  line-height: 1.8;
+}
+
+/* === TIPOGRAFI === */
+h1 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.6rem;
+  color: var(--warna-utama);
+  margin: 0 0 8px;
+}
+
+p {
+  font-size: 1rem;
+  text-align: justify;
+  margin: 0 0 1.2rem;
+}
+
+/* === HEADER (selector id) === */
+#header-utama {
+  background-color: var(--warna-utama);
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+/* === NAVIGASI (descendant & child selector) === */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+nav > ul > li > a {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* === PSEUDO-CLASS :hover === */
+nav a:hover {
+  color: var(--warna-aksen);
+  border-bottom: 2px solid var(--warna-aksen);
+}
+
+/* === LEBAR KONTEN (max-width + margin auto) === */
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+/* === ARTIKEL (selector class) === */
+.artikel {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+}
+
+/* === BLOCKQUOTE === */
+blockquote {
+  margin: 24px 0;
+  padding: 12px 20px;
+  border-left: 5px solid var(--warna-aksen);
+  background-color: #fffbeb;
+  font-style: italic;
+}
+
+/* === LIST (pseudo-class :first-child & :nth-child) === */
+.artikel ul {
+  padding-left: 24px;
+  margin-bottom: 1.2rem;
+}
+
+.artikel li:first-child {
+  font-weight: bold;
+  color: var(--warna-utama);
+}
+
+.artikel li:nth-child(even) {
+  color: #4b5563;
+}
+
+/* === LINK DI DALAM ARTIKEL === */
+.artikel p > a {
+  color: var(--warna-utama);
+  font-weight: bold;
+}
+
+.artikel p > a:hover {
+  color: var(--warna-aksen);
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #651E24;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
