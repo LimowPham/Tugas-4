@@ -6,7 +6,7 @@
   --warna-teks: #1f2937;    /* abu gelap */
 }
 
-/* === RESET & BODY (selector elemen) === */
+
 * {
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ body {
   line-height: 1.8;
 }
 
-/* === TIPOGRAFI === */
+
 h1 {
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 2.2rem;
@@ -41,7 +41,7 @@ p {
   margin: 0 0 1.2rem;
 }
 
-/* === HEADER (selector id) === */
+
 #header-utama {
   background-color: var(--warna-utama);
   color: #ffffff;
@@ -49,7 +49,7 @@ p {
   padding: 24px 16px;
 }
 
-/* === NAVIGASI (descendant & child selector) === */
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -66,20 +66,20 @@ nav > ul > li > a {
   font-size: 0.95rem;
 }
 
-/* === PSEUDO-CLASS :hover === */
+
 nav a:hover {
   color: var(--warna-aksen);
   border-bottom: 2px solid var(--warna-aksen);
 }
 
-/* === LEBAR KONTEN (max-width + margin auto) === */
+
 main {
   max-width: 720px;
   margin: 0 auto;
   padding: 32px 16px;
 }
 
-/* === ARTIKEL (selector class) === */
+
 .artikel {
   background-color: #ffffff;
   padding: 28px;
@@ -95,7 +95,7 @@ main {
   padding-bottom: 12px;
 }
 
-/* === BLOCKQUOTE === */
+
 blockquote {
   margin: 24px 0;
   padding: 12px 20px;
@@ -104,7 +104,7 @@ blockquote {
   font-style: italic;
 }
 
-/* === LIST (pseudo-class :first-child & :nth-child) === */
+
 .artikel ul {
   padding-left: 24px;
   margin-bottom: 1.2rem;
@@ -129,7 +129,7 @@ blockquote {
   color: var(--warna-aksen);
 }
 
-/* === FOOTER === */
+
 footer {
   background-color: #651E24;
   color: #ffffff;
